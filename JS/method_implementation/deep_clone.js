@@ -10,7 +10,7 @@ const deepClone = (obj) => {
   // 判断被传入的参数是否为数组
   // 如是则将结果定义为数组
   // 反之则定义为对象
-  if (Array.prototype.isPrototypeOf(obj)) {
+  if (obj instanceof Array) {
     result = [];
   } else {
     result = {}

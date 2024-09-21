@@ -14,6 +14,8 @@ const debounce = (fn, interval) => {
     // 开始设定一个新的定时器，定时器结束后执行传入的函数fn 
     timer = setTimeout(() => {
       fn(...args);
+      clearTimeout(timer);
+      timer = null;
     }, interval);
   };
 };

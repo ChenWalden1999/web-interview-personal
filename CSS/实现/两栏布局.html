@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- float -->
+  <div class="outer">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+  <!-- flex -->
+  <div class="flexOuter">
+    <div class="flexLeft"></div>
+    <div class="flexRight"></div>
+  </div>
+</body>
+<style>
+/* float */
+.outer {
+  height: 100px;
+}
+
+.left {
+  float: left;
+  height: 100%;
+  width: 200px;
+  background: red;
+
+}
+
+.right {
+  margin-left: 200px;
+  height: 100%;
+  background: green;
+}
+
+/* flex */
+.flexOuter {
+  display: flex;
+  height: 100px;
+}
+
+.flexLeft {
+  width: 200px;
+  background: tomato;
+}
+
+.flexRight {
+  flex: 1;
+  background: gold;
+}
+</style>
+</html>

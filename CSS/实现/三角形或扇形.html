@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+<style>
+.box {
+  height: 0;
+  width: 0;
+  /* 去除该属性就是三角形，反之就是扇形 */
+  border-radius: 100px;
+  border: 100px solid transparent;
+  border-left: 100px solid red;
+}
+</style>
+</html>

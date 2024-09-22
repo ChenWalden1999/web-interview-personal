@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 定位+translate -->
+  <div class="outer">
+    <div class="box"></div>
+  </div>
+
+  <!-- flex -->
+  <div class="flexOuter">
+    <div class="flexBox"></div>
+  </div>
+</body>
+<style>
+/* 定位+translate */
+.outer {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* flex */
+.flexOuter {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexBox {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+</style>
+</html>

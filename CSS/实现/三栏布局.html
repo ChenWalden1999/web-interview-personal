@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- float -->
+  <div class="outer">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="center"></div>
+  </div>
+
+  <!-- flex -->
+  <div class="flexOuter">
+    <div class="flexLeft"></div>
+    <div class="flexCenter"></div>
+    <div class="flexRight"></div>
+  </div>
+</body>
+<style>
+/* float（center盒子需放在最后） */
+.outer {
+  height: 100px;
+}
+
+.left {
+  float: left;
+  height: 100%;
+  width: 100px;
+  background: red;
+}
+
+.center {
+  height: 100%;
+  background: green;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.right {
+  float: right;
+  height: 100%;
+  width: 100px;
+  background: blue;
+}
+
+/* flex */
+.flexOuter {
+  display: flex;
+  height: 100px;
+}
+  
+.flexLeft {
+  width: 100px;
+  background: tomato;
+}
+
+.flexRight {
+  width: 100px;
+  background: gold;
+}
+
+.flexCenter {
+  flex: 1;
+  background: lightgreen;
+}
+</style>
+</html>
